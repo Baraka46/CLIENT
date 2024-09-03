@@ -49,15 +49,20 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <div className="w-full h-full lg:w-[400px] lg:h-[750px] relative rounded-lg shadow-lg overflow-hidden">
               <div
                 className="absolute inset-0 bg-cover bg-center object-cover"
-                style={{ backgroundImage: "url('logo512.png')", opacity: 0.5 }}
+                style={{ backgroundImage: "url('logo512.png')", opacity: 0.5, color:"#14213d" }}
               ></div>
-              <div className="relative z-10 flex flex-col items-center justify-center w-full h-full p-4">
-  <div className="flex flex-col items-center">
-    <p className="text-white mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, nisi?</p>
-    <Button/>
-  </div>
-</div>
-
+              <div className="relative z-10 flex flex-col w-full h-full p-4">
+              <div className="flex-grow">
+                  <p className="text-white mb-4">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Minus, nisi?
+                  </p>
+                  <div className="absolute left-1/2 transform -translate-x-1/2 top-1/2 -translate-y-1/2">
+                  <Button />
+                  </div>
+                 
+                </div>
+              </div>
             </div>
             <div className="w-full lg:w-auto mt-8 lg:mt-0 lg:ml-8 text-center lg:text-left">
               <h2 className="text-2xl font-bold mb-4">Additional Content</h2>
