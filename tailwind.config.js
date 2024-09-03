@@ -4,7 +4,7 @@ module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
-  theme: {        customOrange: '#fca311',
+  theme: {        
 
     extend: {
       colors: {
@@ -12,6 +12,7 @@ module.exports = {
         customBlack: '#fefae0',
         customBlue:  '#0a9396',
         customWhite: '#fefae0',
+        customOrange: '#fca311',
       },
        animation: {
         gradient: 'gradientAnimation 10s ease infinite',

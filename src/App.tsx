@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import './index.css';
 import Layout from './components/layout';
+import Profiles from './components/profiles';
 
 
 const Home = () => <div>Home Page</div>;
