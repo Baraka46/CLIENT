@@ -4,11 +4,7 @@ import { Link } from "react-router-dom";
 import Button from "./buttons";
 import Profiles from "./profiles";
 
-interface LayoutProps {
-  children: React.ReactNode;
-}
-
-const Layout: React.FC<LayoutProps> = ({ children }) => {
+const projects: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <header className="bg-customGreen text-customBlack p-4 shadow-md">
@@ -46,7 +42,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           </ul>
         </aside> */}
         <main className="flex-1 p-6 bg-customBlue rounded-xxl">
-          {children}
+        
           <div className="flex flex-col lg:flex-row items-center justify-center w-full min-h-screen p-4">
             <div className="flex flex-col lg:flex-row lg:space-x-4 space-y-4 lg:space-y-0 w-full h-auto">
           
@@ -169,4 +165,4 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   );
 };
 
-export default Layout;
+export default projects;
