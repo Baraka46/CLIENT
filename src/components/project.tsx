@@ -108,54 +108,7 @@ const projects: React.FC = () => {
         
       </div>
 
-      <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-green-400 to-blue-500 text-white p-8">
-        <div className="max-w-3xl w-full text-center">
-          <h1 className="text-4xl font-bold mb-4">About Me</h1>
-          <p className="text-lg mb-8">
-            Hi there! I’m Jane Doe, a passionate Full Stack Developer with over
-            5 years of experience in building dynamic and responsive web
-            applications. I love turning ideas into reality through clean and
-            efficient code.
-          </p>
-
-          <h2 className="text-3xl font-semibold mb-4">Professional Journey</h2>
-          <p className="text-lg mb-8">
-            My journey began with a curiosity for technology and a desire to
-            create. After earning my degree in Computer Science, I jumped into
-            the tech world, working on various projects that challenged me and
-            helped me grow. From crafting user-friendly interfaces to developing
-            robust back-end systems, I've enjoyed every step of the process.
-          </p>
-          <p className="text-lg mb-8">
-            I specialize in ReactJS, Node.js, and Laravel, with a strong focus
-            on creating seamless user experiences. My portfolio showcases a
-            variety of projects that demonstrate my skills in both front-end and
-            back-end development.
-          </p>
-
-          {/* Personal Touch Section */}
-          <h2 className="text-3xl font-semibold mb-4">
-            A Little More About Me
-          </h2>
-          <p className="text-lg mb-8">
-            When I’m not coding, you can find me exploring new hiking trails,
-            experimenting with new recipes in the kitchen, or diving into a good
-            book. I believe that a well-rounded life fuels creativity and
-            innovation.
-          </p>
-
-          {/* Call to Action Section */}
-          <h2 className="text-3xl font-semibold mb-4">Let’s Connect!</h2>
-          <p className="text-lg mb-8">
-            I’m always open to new opportunities and collaborations. Whether
-            you’re looking for a developer to bring your project to life or just
-            want to chat about the latest tech trends, feel free to reach out!
-          </p>
-          <button className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-md shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300">
-            Contact Me
-          </button>
-        </div>
-      </div>
+   
       <footer className="bg-customGreen text-white p-4 text-center">
         <p>
           &copy; {new Date().getFullYear()} My Portfolio. All rights reserved.
