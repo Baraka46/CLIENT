@@ -13,6 +13,7 @@ module.exports = {
         customBlue:  '#e5e5e5',
         customWhite: '#fefae0',
         customOrange: '#fca311',
+        customCream: '#f3e9d2',
       },
        animation: {
         gradient: 'gradientAnimation 10s ease infinite',
