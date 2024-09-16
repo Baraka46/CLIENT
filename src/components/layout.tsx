@@ -27,10 +27,23 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="hover:underline">
-                  Contact
+              <Link to="/#" className="hover:underline">
+                  projects
                 </Link>
               </li>
+              <li>
+              <Link to="/#" className="hover:underline">
+                  skills
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="hover:underline">
+                <button className="px-1 py-1 bg-white text-customGreen font-semibold rounded-md shadow-lg hover:bg-newGreen hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-300">
+            Contact Me
+          </button>
+                </Link>
+              </li>
+              
             </ul>
           </nav>
         </div>
@@ -49,25 +62,15 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           {children}
           <div className="flex flex-col lg:flex-row items-center justify-center w-full min-h-screen p-4">
             <div className="flex flex-col lg:flex-row lg:space-x-4 space-y-4 lg:space-y-0 w-full h-auto">
-              <div className="w-full min-h-[70vh] lg:min-h-[750px] relative rounded-lg shadow-lg overflow-hidden">
-                <div
-                  className="absolute inset-0 bg-cover bg-center object-cover"
-                  style={{
-                    backgroundImage: "url('logo512.png')",
-                    opacity: 0.5,
-                    color: "#14213d",
-                  }}
-                ></div>
+              <div className="w-full min-h-[70vh] lg:min-h-[60px] relative rounded-lg shadow-lg overflow-hidden">
+               
                 <div className="relative z-10 flex flex-col w-full h-full p-4">
                   <div className="flex-grow">
                     <h1 className="text-lg font-mono text-gray-800 mb-4">
                       Baraka Munisi
                     </h1>
-                    <p className="text font-mono text-customCream mb-4">
-                     A passionate Web Developer skilled
-                      in crafting innovative solutions with the MERN stack and
-                      Laravel. My work blends technical expertise with creative
-                      design, driving impactful digital experiences.
+                    <p className="px-8 text-2xl font-mono text-customCream mb-4 ">
+                    full stack developer
                     </p>
                     <div className="absolute flex items-center justify-center w-full h-full">
                       <Button />
@@ -78,18 +81,17 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
               <div className="w-full min-h-[300px] lg:min-h-[750px] relative rounded-lg shadow-lg overflow-auto">
                 <div className="p-4 text-customCream  font-mono">
+                <div
+                  className="absolute inset-0 bg-cover bg-center object-cover"
+                  style={{
+                    backgroundImage: "url('logo512.png')",
+                  
+                  }}
+                ></div>
                   <h2 className="text-2xl  font-bold mb-4 text-customCream">
                     Additional Content
                   </h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Excepturi iste libero perspiciatis at omnis enim modi quod
-                    et, quo quae quisquam sequi reiciendis neque ullam facilis
-                    error, soluta itaque aperiam.
-                  </p>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores dolor expedita optio quibusdam consectetur vero, maiores eum numquam ab quaerat.
-                  </p>
+              
                 </div>
               </div>
 
