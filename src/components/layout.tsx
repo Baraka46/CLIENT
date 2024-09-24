@@ -3,6 +3,8 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Button from "./buttons";
 import Profiles from "./profiles";
+import { FaSquareXTwitter, FaLinkedin,FaGithub } from "react-icons/fa6";
+import Header from "./navBar";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -11,7 +13,10 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="bg-customGreen text-customBlack p-4 shadow-md">
+      <div>
+        <Header />
+      </div>
+      {/* <header className="bg-customGreen text-customBlack p-4 shadow-md">
         <div className="container mx-auto flex justify-between items-center">
           <h1 className="text-2xl font-bold">My Portfolio</h1>
           <nav>
@@ -27,27 +32,26 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 </Link>
               </li>
               <li>
-              <Link to="/#" className="hover:underline">
+                <Link to="/#" className="hover:underline">
                   projects
                 </Link>
               </li>
               <li>
-              <Link to="/#" className="hover:underline">
+                <Link to="/#" className="hover:underline">
                   skills
                 </Link>
               </li>
               <li>
                 <Link to="/contact" className="hover:underline">
-                <button className="px-1 py-1 bg-white text-customGreen font-semibold rounded-md shadow-lg hover:bg-newGreen hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-300">
-            Contact Me
-          </button>
+                  <button className="px-1 py-1 bg-white text-customGreen font-semibold rounded-md shadow-lg hover:bg-newGreen hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-300">
+                    Contact Me
+                  </button>
                 </Link>
               </li>
-              
             </ul>
           </nav>
         </div>
-      </header>
+      </header> */}
       <div className="flex flex-1">
         {/* <aside className="w-64 bg-customBlue p-4 shadow-md">
           <h2 className="text-xl font-semibold mb-4"></h2>
@@ -63,17 +67,30 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <div className="flex flex-col lg:flex-row items-center justify-center w-full min-h-screen p-4">
             <div className="flex flex-col lg:flex-row lg:space-x-4 space-y-4 lg:space-y-0 w-full h-auto">
               <div className="w-full min-h-[70vh] lg:min-h-[60px] relative rounded-lg shadow-lg overflow-hidden">
-               
                 <div className="relative z-10 flex flex-col w-full h-full p-4">
                   <div className="flex-grow">
                     <h1 className="text-lg font-mono text-gray-800 mb-4">
                       Baraka Munisi
                     </h1>
                     <p className="px-8 text-2xl font-mono text-customCream mb-4 ">
-                    full stack developer
+                      full stack developer
                     </p>
-                    <div className="absolute flex items-center justify-center w-full h-full">
+
+                    <div className="flex flex-col items-center justify-center">
                       <Button />
+                    </div> <br />
+                    <div className="flex items-center justify-center space-x-6 ">
+                    <ul className="flex color-white space-x-4">
+                      <li>
+                        <FaSquareXTwitter className="text-6xl text-white" />
+                      </li>
+                      <li>
+                      <FaLinkedin className="text-6xl text-white" />
+                      </li>
+                      <li>
+                        <FaGithub className="text-6xl text-white" />
+                      </li>
+                    </ul>
                     </div>
                   </div>
                 </div>
@@ -81,17 +98,13 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
               <div className="w-full min-h-[300px] lg:min-h-[750px] relative rounded-lg shadow-lg overflow-auto">
                 <div className="p-4 text-customCream  font-mono">
-                <div
-                  className="absolute inset-0 bg-cover bg-center object-cover"
-                  style={{
-                    backgroundImage: "url('logo512.png')",
-                  
-                  }}
-                ></div>
-                  <h2 className="text-2xl  font-bold mb-4 text-customCream">
-                    Additional Content
-                  </h2>
-              
+                  <div
+                    className="absolute inset-0 bg-cover bg-center object-cover"
+                    style={{
+                      backgroundImage: "url('logo512.png')",
+                    }}
+                  ></div>
+                  <h2 className="text-2xl  font-bold mb-4 text-customCream"></h2>
                 </div>
               </div>
 
@@ -99,7 +112,13 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 <div className="p-4">
                   <h2 className="text-2xl font-bold mb-4">More Content</h2>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro minus vel aperiam asperiores distinctio incidunt aliquid voluptas, magnam exercitationem esse. Facere tempora, harum obcaecati rem repudiandae aliquam sunt dicta iusto incidunt cupiditate vero explicabo dolores sequi necessitatibus quia illum pariatur accusantium? Nulla, neque dolores. Omnis veniam tempora dolor cumque nam.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Porro minus vel aperiam asperiores distinctio incidunt
+                    aliquid voluptas, magnam exercitationem esse. Facere
+                    tempora, harum obcaecati rem repudiandae aliquam sunt dicta
+                    iusto incidunt cupiditate vero explicabo dolores sequi
+                    necessitatibus quia illum pariatur accusantium? Nulla, neque
+                    dolores. Omnis veniam tempora dolor cumque nam.
                   </p>
                 </div>
               </div>
