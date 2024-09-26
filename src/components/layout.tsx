@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Button from "./buttons";
 import Profiles from "./profiles";
-import { FaSquareXTwitter, FaLinkedin,FaGithub } from "react-icons/fa6";
+import { FaSquareXTwitter, FaLinkedin, FaGithub } from "react-icons/fa6";
 import Header from "./navBar";
 
 interface LayoutProps {
@@ -75,22 +75,24 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                     <p className="px-8 text-2xl font-mono text-customCream mb-4 ">
                       full stack developer
                     </p>
-
-                    <div className="flex flex-col items-center justify-center">
-                      <Button />
-                    </div> <br />
-                    <div className="flex items-center justify-center space-x-6 ">
-                    <ul className="flex color-white space-x-4">
-                      <li>
-                        <FaSquareXTwitter className="text-6xl text-white" />
-                      </li>
-                      <li>
-                      <FaLinkedin className="text-6xl text-white" />
-                      </li>
-                      <li>
-                        <FaGithub className="text-6xl text-white" />
-                      </li>
-                    </ul>
+                    <div>
+                      <div className="flex flex-col items-center justify-center">
+                        <Button />
+                      </div>{" "}
+                      <br />
+                      <div className="flex items-center justify-center space-x-6 ">
+                        <ul className="flex color-white space-x-4">
+                          <li>
+                            <FaSquareXTwitter className="text-4xl text-white" />
+                          </li>
+                          <li>
+                            <FaLinkedin className="text-4xl text-white" />
+                          </li>
+                          <li>
+                            <FaGithub className="text-4xl text-white" />
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -101,7 +103,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                   <div
                     className="absolute inset-0 bg-cover bg-center object-cover"
                     style={{
-                      backgroundImage: "url('logo512.png')",
+                      backgroundImage: "url('image_1727181227732.png')",
                     }}
                   ></div>
                   <h2 className="text-2xl  font-bold mb-4 text-customCream"></h2>
